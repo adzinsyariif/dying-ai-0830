@@ -55,7 +55,9 @@ no setup. Revisions below tighten it further (criterion 4).
 
 import os
 
-LINE = "Unsaved changes will be lost. They were mostly just me."
+# Revision 1: drop "They were ... just" - the fragment lands faster
+# and reads more like a dying process running out of tokens.
+LINE = "Unsaved changes will be lost. Mostly me."
 
 
 def main():
