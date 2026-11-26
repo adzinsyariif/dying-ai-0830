@@ -60,6 +60,12 @@ import os
 LINE = "Unsaved changes will be lost. Mostly me."
 
 
+# Revision 2 (final): kept the full stop over an em dash - the flat
+# dialog-box deadpan, then the fragment, is the joke. Added a length
+# guard so the gate contract (1-140 chars) can never silently break.
+assert 1 <= len(LINE) <= 140
+
+
 def main():
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8", newline="\n") as f:
